@@ -1,0 +1,79 @@
+[+] https://www.google.com/search?q=cyber+security
+    Risk score : 0/100
+    Verdict    : SAFE
+    Reasons    : none - no red flags detected
+
+[+] https://www.ibm.com/skills
+    Risk score : 0/100
+    Verdict    : SAFE
+    Reasons    : none - no red flags detected
+
+[+] https://skillsbuild.org/students
+    Risk score : 0/100
+    Verdict    : SAFE
+    Reasons    : none - no red flags detected
+
+[X] http://secure-login.paypa1.com/verify?account=1
+    Risk score : 65/100
+    Verdict    : PHISHING
+    Reasons    :
+      +10  Connection is not HTTPS
+      +20  Suspicious keywords: login, verify, secure, account
+      +35  Look-alike of 'paypal' (typosquatting: 'paypa1')
+
+[X] http://192.168.10.5:8080/signin/update-password
+    Risk score : 68/100
+    Verdict    : PHISHING
+    Reasons    :
+      +10  Connection is not HTTPS
+      +25  Host is a raw IP address
+      +8   Many digits in domain name
+      +15  Suspicious keywords: update, signin, password
+      +10  Non-standard port 8080
+
+[X] http://sbi-kyc-update.xyz/otp/confirm
+    Risk score : 85/100
+    Verdict    : PHISHING
+    Reasons    :
+      +10  Connection is not HTTPS
+      +10  Multiple hyphens in domain name
+      +15  High-risk TLD '.xyz'
+      +20  Suspicious keywords: update, confirm, kyc, otp
+      +20  Brand 'sbi' embedded in unrelated domain 'sbi-kyc-update'
+      +10  Domain looks randomly generated (high entropy)
+
+[!] https://bit.ly/3xYzAbC
+    Risk score : 25/100
+    Verdict    : SUSPICIOUS
+    Reasons    :
+      +25  URL shortener hides the real destination
+
+[X] http://amazon.account-verify.login.secure-update.tk/signin
+    Risk score : 90/100
+    Verdict    : PHISHING
+    Reasons    :
+      +10  Connection is not HTTPS
+      +15  Excessive subdomains (3)
+      +5   Hyphen in domain name
+      +15  High-risk TLD '.tk'
+      +20  Suspicious keywords: login, verify, update, secure, account, signin
+      +25  Brand 'amazon' used as subdomain of 'secure-update.tk'
+
+[X] http://www.faceb00k.com/login
+    Risk score : 50/100
+    Verdict    : PHISHING
+    Reasons    :
+      +10  Connection is not HTTPS
+      +5   Suspicious keywords: login
+      +35  Look-alike of 'facebook' (typosquatting: 'faceb00k')
+
+[X] http://user@evil-site.top/bank/login
+    Risk score : 60/100
+    Verdict    : PHISHING
+    Reasons    :
+      +10  Connection is not HTTPS
+      +25  URL contains '@' (browser ignores text before it)
+      +5   Hyphen in domain name
+      +15  High-risk TLD '.top'
+      +5   Suspicious keywords: login
+

@@ -1,0 +1,9 @@
+# Phishing URL Detector - BharatCares x IBM SkillsBuild (Cyber Security)
+#
+# The detector uses ONLY the Python standard library (argparse, re, math,
+# ipaddress, urllib), so no third-party package is needed to run it.
+#
+# Python version required: 3.8 or newer
+#
+# Optional (only needed to regenerate the PDF project report):
+reportlab>=4.0
